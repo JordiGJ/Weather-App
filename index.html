@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="./script.js" type="module" defer></script>
+</head>
+
+<body>
+</body>
+<section>
+  <article id="firstLoad">
+    <h1>Weather App</h1>
+    <input type="text" name="city" id="city" placeholder="Enter city">
+    <button>Get Weather</button>
+  </article>
+  <article id="info" class="hidden">
+    <p id="cityP"><span id="citySearched">Luton</span> <span id="country">GB</span></p>
+    <img src="" alt="Weather Icon">
+    <p id="tempP"><span id="temperature">34</span>°C</p>
+    <p id="condition"></p>
+    <div class="threeFields">
+      <div class="feels field">
+        <p>Feels like: <span id="feels">37</span></p>
+      </div>
+      <div class="humidity field">
+        <p>Humidity: <span id="humidity">44</span>%</p>
+      </div>
+      <div class="speed field">
+        <p>Wind speed: <br><span id="speed">1.54</span>m/s</p>
+      </div>
+    </div>
+  </article>
+  <p id="error" class="hidden">An error happened, please try again later</p>
+</section>
+
+</html>
